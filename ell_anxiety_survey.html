@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ELL Speaking Anxiety Survey</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
+    .container { background: white; padding: 20px; border-radius: 10px; max-width: 800px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #333; }
+    label { display: block; margin-top: 15px; }
+    .chart { margin-top: 40px; }
+    .bar { height: 20px; background: teal; margin: 5px 0; color: white; text-align: right; padding-right: 5px; border-radius: 5px; }
+    .submit-btn { margin-top: 20px; padding: 10px 15px; background: #008080; color: white; border: none; border-radius: 5px; cursor: not-allowed; }
+    .submit-btn:disabled { background: #ccc; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Survey: How Does Anxiety Affect Speaking Performance Among ELLs?</h1>
+  <form>
+    <label>1. On a scale of 1-10, how nervous do you feel when speaking English in class?</label>
+    <input type="range" min="1" max="10" value="7" disabled>
+
+    <label>2. What situations make you most anxious when speaking English?</label>
+    <select disabled>
+      <option>Whole class discussions</option>
+      <option>One-on-one with teacher</option>
+      <option>Group work</option>
+      <option>Presentations</option>
+    </select>
+
+    <label>3. What helps you feel more confident when speaking?</label>
+    <input type="text" value="Working with friends" disabled>
+
+    <label>4. Have you ever stayed quiet even when you knew the answer?</label>
+    <input type="radio" name="q4" checked disabled> Yes
+    <input type="radio" name="q4" disabled> No
+
+    <label>5. Do you prefer speaking in smaller groups?</label>
+    <input type="radio" name="q5" checked disabled> Yes
+    <input type="radio" name="q5" disabled> No
+
+    <label>6. What could your teacher do to make you feel more comfortable?</label>
+    <input type="text" value="Let students prepare in pairs first" disabled>
+
+    <button class="submit-btn" disabled>Submit (Disabled)</button>
+  </form>
+
+  <div class="chart">
+    <h2>Simulated Results Dashboard</h2>
+    <p><strong>70%</strong> of students report feeling anxious when speaking in front of the whole class.</p>
+    <div class="bar" style="width: 70%">70%</div>
+
+    <p><strong>65%</strong> prefer small group discussions over full class speaking.</p>
+    <div class="bar" style="width: 65%">65%</div>
+
+    <p><strong>58%</strong> said they "know the answer" but stay quiet due to anxiety.</p>
+    <div class="bar" style="width: 58%">58%</div>
+
+    <p><strong>80%</strong> want more preparation time before speaking.</p>
+    <div class="bar" style="width: 80%">80%</div>
+
+    <p><strong>45%</strong> feel more confident when working with friends.</p>
+    <div class="bar" style="width: 45%">45%</div>
+  </div>
+</div>
+</body>
+</html>
